@@ -39,7 +39,6 @@
                 console.log('success', r);
             })
             .catch(err => {
-                console.log('err', err);
                 alert('Something went wrong')
             })
             .finally(() => {
