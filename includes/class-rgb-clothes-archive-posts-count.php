@@ -1,7 +1,9 @@
 <?php
 
 /**
- * Set single template
+ * Set products count
+ *
+ * @package rgb_clothes
  */
 
 

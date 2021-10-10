@@ -2,7 +2,7 @@
 /**
  * The template for displaying post type 'clothes' single page
  *
- * @package rgb-clothes
+ * @package rgb_clothes
  */
 
 get_header();

@@ -4,10 +4,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package rgb_test
+ * @package rgb_clothes
  */
 
-$terms = get_terms('clothes-type');
+$terms = get_terms('clothes-type', array(
+    'hide_empty' => false,
+));
 
 $user = wp_get_current_user();
 $allowed_roles = array('editor', 'administrator');

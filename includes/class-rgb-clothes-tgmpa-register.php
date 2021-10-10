@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Register TGMPA
+ *
+ * @package rgb_clothes
+ */
 
 class RGB_Clothes_TGMPA_Register {
 

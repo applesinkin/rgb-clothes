@@ -3,16 +3,10 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       http://example.com
- * @since      1.0.0
- *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/public
+ * @package rgb_clothes
  */
 
-/**
- * The public-facing functionality of the plugin.
- */
+
 class RGB_Clothes_Public {
 
 	private $plugin_name;

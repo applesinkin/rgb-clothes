@@ -1,7 +1,9 @@
 <?php
 
 /**
- * Set single template
+ * Set archive and taxonomy templates
+ *
+ * @package rgb_clothes
  */
 
 

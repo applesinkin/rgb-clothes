@@ -2,6 +2,8 @@
 
 /**
  * The file that defines the core "RGB Clothes" plugin class
+ *
+ * @package rgb_clothes
  */
 
 

@@ -1,4 +1,9 @@
 <?php
+/**
+ * Set shortcodes callbacks
+ *
+ * @package rgb_clothes
+ */
 
 class RGB_Clothes_Shortcodes {
 

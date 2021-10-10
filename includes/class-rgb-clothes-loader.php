@@ -2,6 +2,8 @@
 
 /**
  * Register all actions and filters for the plugin
+ *
+ * @package rgb_clothes
  */
 
 
@@ -13,11 +15,9 @@ class RGB_Clothes_Loader {
 
 
 	public function __construct() {
-
 		$this->actions = array();
 		$this->filters = array();
 		$this->shortcodes = array();
-
 	}
 
 

@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Set single template
+ * Product create
+ *
+ * @package rgb_clothes
  */
 
 
 class RGB_Clothes_Ajax_Create_Product {
 
 	public function create_product() {
-
-        wp_send_json_success('test123');
 
         // check user roles
         $user = wp_get_current_user();

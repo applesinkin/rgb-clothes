@@ -1,7 +1,9 @@
 <?php
 
 /**
- * Register all actions and filters for the plugin
+ * Register new post type and meta
+ *
+ * @package rgb_clothes
  */
 
 

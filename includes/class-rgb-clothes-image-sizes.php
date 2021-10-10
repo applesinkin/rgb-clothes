@@ -1,7 +1,9 @@
 <?php
 
 /**
- * Add image sizes
+ * Set new image sizes
+ *
+ * @package rgb_clothes
  */
 
 

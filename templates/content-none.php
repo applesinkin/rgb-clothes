@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package rgb_test
+ * @package rgb_clothes
  */
 
 ?>

@@ -2,6 +2,8 @@
 
 /**
  * Set single template
+ *
+ * @package rgb_clothes
  */
 
 

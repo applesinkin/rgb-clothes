@@ -46,14 +46,9 @@ require RGB_CLOTHES_PLUGIN_DIR . 'includes/plugin-functions.php';
 require RGB_CLOTHES_PLUGIN_DIR . 'includes/plugin-tags.php';
 
 
-//function rgb_closest_form_shortcode() {
-//    ob_start();
-//    rgb_clothes_load_template( 'form-create-product.php' );
-//    return ob_get_clean();
-//}
-//add_shortcode( 'rgb_closest_form', 'rgb_closest_form_shortcode' );
-
-
+/**
+ * Begins execution of the plugin.
+ */
 
 require plugin_dir_path( __FILE__ ) . 'includes/class-rgb-clothes.php';
 

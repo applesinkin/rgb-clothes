@@ -2,7 +2,7 @@
 /**
  * The template for displaying post type 'clothes' archive page
  *
- * @package rgb_test
+ * @package rgb_clothes
  */
 
 get_header();
