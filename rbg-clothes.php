@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: RGB Clothes
- * Description: Custom clothes catalogue
+ * Description: Custom clothes catalogue. Use the shortcode [rgb_clothes_create_form] to place the product creating form on pages. To customize templataes, move "template" folder to your theme and rename it to "rgb-clothes".
  * Author:      Applesinkin
  * Version:     0.0.1
  *
