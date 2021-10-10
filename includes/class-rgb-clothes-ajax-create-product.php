@@ -26,9 +26,20 @@ class RGB_Clothes_Ajax_Create_Product {
             wp_send_json_error( array('message' => 'The action is not permitted') );
         }
 
+        $post_title = isset($_POST['title']) ? sanitize_text_field( $_POST['title'] ) : false;
+        $post_content = isset($_POST['description']) ? sanitize_textarea_field( $_POST['description'] ) : false;
+        $post_types = isset($_POST['types']) ? sanitize_text_field( $_POST['types'] ) : false;
+        $post_size = isset($_POST['size']) ? sanitize_text_field( $_POST['size'] ) : false;
+        $post_color = isset($_POST['color']) ? sanitize_text_field( $_POST['color'] ) : false;
+        $post_sex = isset($_POST['sex']) ? sanitize_text_field( $_POST['sex'] ) : false;
+
+        if (!$post_title) {
+            wp_send_json_error( array('message' => "The post title is not defined") );
+        }
+
         $post_data = array(
-            'post_title' => sanitize_text_field( $_POST['title'] ),
-            'post_content' => $_POST['description'],
+            'post_title' => $post_title,
+            'post_content' => $post_content,
             'post_status' => 'publish',
             'post_type' => 'clothes',
             'post_author' => get_current_user_id(),
@@ -41,19 +52,19 @@ class RGB_Clothes_Ajax_Create_Product {
         }
 
         // set post terms
-        if ( isset($_POST['types']) ) {
-            wp_set_object_terms( $post_id, explode(',', $_POST['types']), 'clothes-type' );
+        if ($post_types) {
+            wp_set_object_terms( $post_id, explode( ',', $post_types ), 'clothes-type' );
         }
 
         // set ACF meta values
-        if ( isset($_POST['size']) ) {
-            rgb_clothes_update_acf_meta('field_rgb_clothes_size', $_POST['size'], $post_id);
+        if ($post_size) {
+            rgb_clothes_update_acf_meta('field_rgb_clothes_size', $post_types, $post_id);
         }
-        if ( isset($_POST['color']) ) {
-            rgb_clothes_update_acf_meta('field_rgb_clothes_color', $_POST['color'], $post_id);
+        if ($post_color) {
+            rgb_clothes_update_acf_meta('field_rgb_clothes_color', $post_color, $post_id);
         }
-        if ( isset($_POST['sex']) ) {
-            rgb_clothes_update_acf_meta('field_rgb_clothes_sex', $_POST['sex'], $post_id);
+        if ($post_sex) {
+            rgb_clothes_update_acf_meta('field_rgb_clothes_sex', $post_sex, $post_id);
         }
 
         // set thumbnails
